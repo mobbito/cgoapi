@@ -56,7 +56,7 @@ const bruteStore = new BruteRedis({
 
 const bruteForce = new Brute(bruteStore);
 
-routes.get('/', (req, res) => res.send('Server Deubom Testes'));
+routes.get('/', (req, res) => res.send('Server Deubom - Teste'));
 
 routes.get('/hours/:providerId', HourController.index);
 routes.post('/hours', HourController.store);

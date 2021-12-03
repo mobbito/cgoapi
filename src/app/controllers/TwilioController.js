@@ -13,7 +13,7 @@ class TwilioController {
       process.env.ACCOUNT_SID,
       process.env.API_KEY_SID,
       process.env.API_KEY_SECRET,
-      { identity: 'triplrrr' }
+      { identity: req.params.username }
     );
     // Grant access to Video
     const grant = new VideoGrant();

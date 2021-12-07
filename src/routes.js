@@ -33,6 +33,7 @@ import ValidateNumberCreditCard from './app/controllers/ValidateNumberCreditCard
 import ContractPlanController from './app/controllers/ContractPlanController';
 import CancelPlanController from './app/controllers/CancelPlanController';
 import VideoDetachController from './app/controllers/VideoDetachController';
+import VideoConsultController from './app/controllers/VideoConsultController';
 
 // Clinic
 import ClinicController from './app/controllers/ClinicController';
@@ -84,6 +85,8 @@ routes.delete('/channel/:channelId', ChannelController.delete);
 
 routes.post('/video', VideoController.store);
 routes.get('/video', VideoController.index);
+
+routes.get('/videoconsult', VideoConsultController.index);
 
 routes.get('/viewvideo/:video', ViewVideoController.index);
 
